@@ -17,7 +17,7 @@ def calcular_bonus_refatorado(salario, tempo_casa, faltas):
 print(calcular_bonus(2500, 2, 1))
 print(calcular_bonus_refatorado(1500, 2, 1))
 
-tempo_antes = timeit.timeit("calcular_bonus(1500, 2, 1)", globals=globals(), number=1_000_000)
+tempo_antes = timeit.timeit("calcular_bonus(2500, 2, 1)", globals=globals(), number=1_000_000)
 tempo_depois = timeit.timeit("calcular_bonus_refatorado(1500, 2, 1)", globals=globals(), number=1_000_000)
 
 print(f"Versão Antes: {tempo_antes:.4f} segundos")
